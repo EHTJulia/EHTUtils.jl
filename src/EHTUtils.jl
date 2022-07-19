@@ -1,10 +1,12 @@
 module EHTUtils 
-# Physical constants
+# Import Modules
 using PhysicalConstants.CODATA2018: k_B, c_0  # for const.jl
-# Uniftful
 using Unitful
 using UnitfulAngles
 using UnitfulAstro
+
+# Export
+export unitconv, get_unit
 
 # popular constants
 include("const.jl")
