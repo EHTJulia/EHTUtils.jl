@@ -43,7 +43,7 @@ function get_unit(angunit::String)
         return u"arcminute"
     elseif au_l == "deg" || au_l == "degree"
         return u"°"
-    elseif au_l == "rad" || ai_l == "radian"
+    elseif au_l == "rad" || au_l == "radian"
         return u"rad"
     else
         return dimension(Unitful.lookup_units([Unitful, UnitfulAstro, UnitfulAngles], Symbol(angunit)))
