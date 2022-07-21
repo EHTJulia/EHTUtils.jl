@@ -4,7 +4,7 @@ CurrentModule = EHTUtils
 
 # EHTUtils
 
-Documentation for [EHTUtils](https://github.com/kazuakiyama/EHTUtils.jl).
+Documentation for [EHTUtils](https://github.com/EHTJulia/EHTUtils.jl).
 
 ```@index
 ```
