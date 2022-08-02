@@ -46,7 +46,7 @@ function get_unit(angunit::String)
     elseif au_l == "rad" || au_l == "radian"
         return u"rad"
     else
-        return dimension(Unitful.lookup_units([Unitful, UnitfulAstro, UnitfulAngles], Symbol(angunit)))
+        return Unitful.lookup_units([Unitful, UnitfulAstro, UnitfulAngles], Symbol(angunit))
     end
 end
 
