@@ -19,8 +19,8 @@ units of angular sizes in a specified type.
 """
 function get_solidangle(
     x::Number; y::Number=0,
-    angunit::Union{Unitful.Units,Unitful.Quantity}=rad,
-    angunitout::Union{Unitful.Units,Unitful.Quantity,Nothing}=nothing,
+    angunit::rad,
+    angunitout::nothing,
     satype::String="pixel")
 
     # check x-value
