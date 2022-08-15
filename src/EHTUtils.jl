@@ -5,9 +5,6 @@ using Unitful
 using UnitfulAngles
 using UnitfulAstro
 
-# Export
-export unitconv, get_unit
-
 # popular constants
 include("const.jl")
 

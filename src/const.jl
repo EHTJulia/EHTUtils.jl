@@ -1,6 +1,6 @@
 """
 This file is setting up some constants
-to be used frequently inside this module.
+to be used frequently in EHT data analysis
 """
 # Gaussian related
 const sigma2fwhm = sqrt(8.0 * log(2.0))::Float64

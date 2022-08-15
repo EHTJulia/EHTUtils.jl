@@ -1,3 +1,5 @@
+export get_solidangle
+
 function get_solidangle(;
     x::Number, y::Number=0,
     angunit::Union{Unitful.Units,Unitful.Quantity}=u"rad",
