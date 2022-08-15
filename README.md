@@ -1,6 +1,4 @@
 # EHTUtils
-
-[![Stable](https://img.shields.io/badge/docs-stable-blue.svg)](https://EHTJulia.github.io/EHTUtils.jl/stable/)
 [![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://EHTJulia.github.io/EHTUtils.jl/dev/)
 [![Build Status](https://github.com/EHTJulia/EHTUtils.jl/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/EHTJulia/EHTUtils.jl/actions/workflows/CI.yml?query=branch%3Amain)
 [![Coverage](https://codecov.io/gh/EHTJulia/EHTUtils.jl/branch/main/graph/badge.svg)](https://codecov.io/gh/EHTJulia/EHTUtils.jl)
@@ -11,7 +9,5 @@ This is a module written as a common sub module for other libraries under the [E
 - Some useful shortcut functions for [PyPlot.jl](https://github.com/JuliaPy/PyPlot.jl) or [Makie.jl](https://makie.juliaplots.org/stable/documentation/backends/glmakie/)
 
 
-
 ## Documentation
-----------------
 The [latest](https://ehtjulia.github.io/EHTUtils.jl/dev) version available. The stable version has not been released. 
