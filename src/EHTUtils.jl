@@ -1,4 +1,4 @@
-module EHTUtils 
+module EHTUtils
 # Import Modules
 using PhysicalConstants.CODATA2018: k_B, c_0  # for const.jl
 using Unitful
