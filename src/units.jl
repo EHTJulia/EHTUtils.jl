@@ -1,4 +1,4 @@
-export unitconv, get_uniit
+export unitconv, get_unit
 export degree, deg
 export radian, rad
 export arcminute, arcmin

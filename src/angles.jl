@@ -2,7 +2,7 @@ export get_solidangle
 
 
 """
-    get_solidangle(x, y, angunit=u"rad", angunitout=nothing, satype="pixel")
+    get_solidangle(x; [y=0, angunit=u"rad", angunitout=nothing, satype="pixel"])
 
 compute the solid angle for a given set of the angular sizes at specified
 units of angular sizes in a specified type.
@@ -18,8 +18,8 @@ units of angular sizes in a specified type.
     "pixel" for the solid angle of the rectangular area, and "beam" for the beam solid angle.
 """
 function get_solidangle(;
-    x::Number, y::Number=0,
-    angunit::Union{Unitful.Units,Unitful.Quantity}=u"rad",
+    x::Number; y::Number=0,
+    angunit::Union{Unitful.Units,Unitful.Quantity}=rad,
     angunitout::Union{Unitful.Units,Unitful.Quantity,Nothing}=nothing,
     satype::String="pixel")
 
