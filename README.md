@@ -10,4 +10,8 @@ This is a module written as a common sub module for other libraries under the [E
 - Popular Conversion factors in EHT data analysis
 - Some useful shortcut functions for [PyPlot.jl](https://github.com/JuliaPy/PyPlot.jl) or [Makie.jl](https://makie.juliaplots.org/stable/documentation/backends/glmakie/)
 
-Documentation is available [here](https://ehtjulia.github.io/EHTUtils.jl).
+
+
+## Documentation
+----------------
+The [latest](https://ehtjulia.github.io/EHTUtils.jl/dev) version available. The stable version has not been released. 
