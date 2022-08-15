@@ -45,9 +45,9 @@ function get_solidangle(
 
     # Get the converstion factor
     satype_ch = lowercase(satype[1])
-    if satype_ch == "b"
+    if satype_ch == 'b'
         beamcorr = pi / (4 * log(2))
-    elseif satype_ch == "p"
+    elseif satype_ch == 'p'
         beamcorr = 1.0
     else
         beamcorr = 1.0
