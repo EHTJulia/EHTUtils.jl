@@ -17,7 +17,7 @@ units of angular sizes in a specified type.
 - `satype`: the type of the output solid angle:
     "pixel" for the solid angle of the rectangular area, and "beam" for the beam solid angle.
 """
-function get_solidangle(;
+function get_solidangle(
     x::Number; y::Number=0,
     angunit::Union{Unitful.Units,Unitful.Quantity}=rad,
     angunitout::Union{Unitful.Units,Unitful.Quantity,Nothing}=nothing,
