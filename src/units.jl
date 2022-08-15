@@ -28,9 +28,10 @@ function unitconv(
 
     if unit1 isa Unitful.Quantity
         val1 = unit1.val
-        uni1 = unit(unit1)u"Jy"
-        mJy = u"mJy"
-        uJy = μJy = u"μJy"
+        uni1 = unit(unit1)
+    else
+        val1 = 1
+        uni1 = unit1
     end
 
     if unit2 isa Unitful.Quantity
