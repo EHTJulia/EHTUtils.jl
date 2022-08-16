@@ -4,9 +4,9 @@ export radian, rad
 export arcminute, arcmin
 export arcsecond, arcsec, as
 export milliarcsecond, mas
-export microarcsecond, uas, μas
+export microarcsecond, μas
 export K
-export Jy, mJy, uJy, μJy
+export Jy, mJy, μJy
 
 
 """
