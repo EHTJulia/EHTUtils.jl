@@ -7,51 +7,55 @@ export get_solidangle
 compute the solid angle for a given set of the angular sizes at specified
 units of angular sizes in a specified type.
 
-
 # Arguments
-- `x, y::Number`: the size of the area in two orthogonal directions. if y <= 0, y = x.
-- `angunit::Unitful.Units or Unitful.Quantity`: the angular unit of `x` and `y`
+- `Δx, Δy::Real`:
+    the size of the area in two orthogonal directions. if `Δy <= 0`, `Δy = Δx`.
+- `angunit::Unitful.Units or Unitful.Quantity`:
+    the angular unit of `Δx` and `Δy`. Default is `rad`
 - `angunitout::Unitful.Units, Unitful.Quantity or nothing`: 
     the angular unit for the output solid angle. If nothing is specified,
     use the same unit specified in `angunit`.
-- `satype`: the type of the output solid angle:
-    "pixel" for the solid angle of the rectangular area, and "beam" for the beam solid angle.
+- `satype::Symbol`
+    The type of the output solid angle:
+    `:pixel` for the solid angle of the rectangular area, and
+    `:beam` for the beam solid angle.
+    For `:beam`, Δx, Δy will be interperted as Gaussian FWHMs.
 """
 function get_solidangle(
-    x=1, y=-1;
+    Δx::Real=1,
+    Δy::Real=-1;
     angunit=rad,
     angunitout=nothing,
-    satype::AbstractString="pixel"
+    satype::Symbol=:pixel
 )
 
     # check x-value
-    if x <= 0
-        error("x must be positive")
+    if Δx <= 0
+        error("Δx must be positive")
     end
 
     # Get y-pixel size
-    if y <= 0
-        y = x
+    if Δy <= 0
+        Δy = Δx
     end
 
-    # Get the conversion factor for the unit
-    if angunitout isa Nothing
-        aconv = 1.0
+    # Get the conversion factor for the angular units
+    if isnothing(angunitout)
+        fa = 1
     elseif angunitout == angunit
-        aconv = 1.0
+        fa = 1
     else
-        aconv = ustrip(angunitout, 1angunit)
+        fa = ustrip(angunitout, 1angunit)
     end
 
     # Get the converstion factor
-    satype_ch = lowercase(satype[1])
-    if satype_ch == 'b'
-        beamcorr = pi / (4 * log(2))
-    elseif satype_ch == 'p'
-        beamcorr = 1.0
+    if satype == :beam
+        fb = π / (4 * log(2))
+    elseif satype == :pixel
+        fb = 1
     else
-        beamcorr = 1.0
+        @error "satype must be :beam or :pixel"
     end
 
-    return beamcorr * x * y * aconv^2
+    return Δx * Δy * fa^2 * fb
 end

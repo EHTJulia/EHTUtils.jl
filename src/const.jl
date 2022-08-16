@@ -10,8 +10,8 @@ const hwhm2sigma = 1.0 / sigma2hwhm::Float64
 
 # Angular Sizes
 #const deg2rad = pi / 180.0::Float64  (there is a standard function with the same name)
-const amin2rad = deg2rad / 60.0::Float64
-const asec2rad = deg2rad / 3600.0::Float64
+const amin2rad = π / 180.0 / 60.0::Float64
+const asec2rad = π / 180.0 / 3600.0::Float64
 const mas2rad = asec2rad / 1e3::Float64
 const uas2rad = asec2rad / 1e6::Float64
 const μas2rad = uas2rad::Float64

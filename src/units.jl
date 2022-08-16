@@ -58,7 +58,7 @@ julia> mas = get_unit("mas") # returns Unitful.Unit object
 function get_unit(unitstring::String)
     u_l = lowercase(unitstring)
 
-    if u_l == "uas"
+    if u_l == "μas"
         return u"μas"
     elseif u_l == "mas"
         return u"mas"
@@ -81,12 +81,12 @@ radian = rad = u"rad"
 arcminute = arcmin = u"arcminute"
 arcsecond = arcsec = as = u"arcsecond"
 milliarcsecond = mas = u"mas"
-microarcsecond = uas = μas = u"μas"
+microarcsecond = μas = u"μas"
 
 # Jy
 Jy = u"Jy"
 mJy = u"mJy"
-uJy = μJy = u"μJy"
+μJy = u"μJy"
 
 # Kelvin
 K = u"K"
