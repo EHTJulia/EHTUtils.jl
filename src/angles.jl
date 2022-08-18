@@ -31,7 +31,7 @@ function get_solidangle(
 
     # check x-value
     if Δx <= 0
-        error("Δx must be positive")
+        @throwerror ArgumentError "Δx must be positive"
     end
 
     # Get y-pixel size
@@ -54,7 +54,7 @@ function get_solidangle(
     elseif satype == :pixel
         fb = 1
     else
-        @error "satype must be :beam or :pixel"
+        @throwerror ArgumentError "satype must be :beam or :pixel"
     end
 
     return Δx * Δy * fa^2 * fb

@@ -13,4 +13,7 @@ include("units.jl")
 
 # functions related to angles
 include("angles.jl")
+
+# some quick tools for Logging
+include("logging.jl")
 end
