@@ -1,3 +1,5 @@
+export @throwerror
+
 """
     @throwerror exception message
 
