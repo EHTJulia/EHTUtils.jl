@@ -1,4 +1,4 @@
-export @throwerror
+export throwerror
 
 """
     @throwerror exception message
@@ -17,6 +17,6 @@ Stacktrace:
    @ logging.jl:8
 ```
 """
-macro throwerror(e::DataType, message::AbstractString)
+macro throwerror(e, message::AbstractString)
     return :(@error $(message); throw($(e)($message)))
 end
