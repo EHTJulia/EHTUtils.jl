@@ -1,4 +1,4 @@
-export throwerror
+export @throwerror
 
 """
     @throwerror exception message
