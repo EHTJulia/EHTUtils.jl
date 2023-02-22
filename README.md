@@ -10,6 +10,7 @@ This is a module written as a common sub module for other libraries under the [E
 
 # Installation
 Assuming that you already have Julia correctly installed, it suffices to import EHTUtils.jl in the standard way:
+
 ```julia
 using Pkg
 Pkg.add("EHTUtils")
