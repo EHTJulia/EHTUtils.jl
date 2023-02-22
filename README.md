@@ -8,6 +8,12 @@ This is a module written as a common sub module for other libraries under the [E
 - Popular Conversion factors in EHT data analysis
 - Some useful shortcut functions for [PyPlot.jl](https://github.com/JuliaPy/PyPlot.jl) or [Makie.jl](https://makie.juliaplots.org/stable/documentation/backends/glmakie/)
 
+# Installation
+Assuming that you already have Julia correctly installed, it suffices to import EHTUtils.jl in the standard way:
+```julia
+using Pkg
+Pkg.add("EHTUtils")
+```
 
 ## Documentation
 The [latest](https://ehtjulia.github.io/EHTUtils.jl/dev) version available. The stable version has not been released. 
