@@ -17,4 +17,10 @@ Pkg.add("EHTUtils")
 ```
 
 ## Documentation
-The [latest](https://ehtjulia.github.io/EHTUtils.jl/dev) version available. The stable version has not been released. 
+The documentation is in preparation, but docstrings of available functions are listed for the [latest](https://ehtjulia.github.io/EHTUtils.jl/dev) version. The stable version has not been released. 
+
+## Acknowledgement
+The development of this package has been finantially supported by the following programs.
+- v0.1.0 - v0.1.1: [ALMA North American Development Study Cycle 8](https://science.nrao.edu/facilities/alma/science_sustainability/alma-develop-history), National Radio Astronomy Observatory (NRAO), USA
+
+The National Radio Astronomy Observatory is a facility of the National Science Foundation operated under cooperative agreement by Associated Universities, Inc.
