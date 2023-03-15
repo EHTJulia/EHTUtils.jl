@@ -1,6 +1,5 @@
 export get_solidangle
 
-
 """
     get_solidangle(x, [y=0; angunit=u"rad", angunitout=nothing, satype="pixel"])
 

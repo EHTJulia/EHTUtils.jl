@@ -9,6 +9,9 @@ using UnitfulAstro
 # some quick tools for Logging
 include("logging.jl")
 
+# variants of unique functions
+include("unique.jl")
+
 # popular constants
 include("const.jl")
 
