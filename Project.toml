@@ -1,7 +1,7 @@
 name = "EHTUtils"
 uuid = "9d0fa6a6-ae25-4c2e-8152-6c4b7f2016aa"
-authors = ["Kazu Akiyama"]
-version = "0.1.1"
+authors = ["Kazunori Akiyama"]
+version = "0.1.2"
 
 [deps]
 Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
