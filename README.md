@@ -6,7 +6,6 @@
 This is a module written as a common sub module for other libraries under the [EHT Julia organization](https://github.com/EHTJulia). The module aims to implement 
 - Quick shortcuts to popular physical or angular units and unit conversion functions based on [Unitful.Unit](https://github.com/PainterQubits/Unitful.jl)
 - Popular Conversion factors in EHT data analysis
-- Some useful shortcut functions for [PyPlot.jl](https://github.com/JuliaPy/PyPlot.jl) or [Makie.jl](https://makie.juliaplots.org/stable/documentation/backends/glmakie/)
 
 ## Installation
 Assuming that you already have Julia correctly installed, it suffices to import EHTUtils.jl in the standard way:
